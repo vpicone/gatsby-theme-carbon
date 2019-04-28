@@ -50,7 +50,11 @@ const LeftNav = props => {
     ));
 
   return (
-    <LeftNavWrapper expanded={leftNavIsOpen} homepage={props.homepage}>
+    <LeftNavWrapper
+      ref={sideNavRef}
+      expanded={leftNavIsOpen}
+      homepage={props.homepage}
+    >
       <SideNav
         isExpanded={leftNavIsOpen}
         aria-label="Side navigation"
