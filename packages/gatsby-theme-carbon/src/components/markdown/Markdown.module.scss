@@ -166,6 +166,10 @@
   @include carbon--type-style('heading-02');
 }
 
+.h4 > * {
+  --space: 0;
+}
+
 .h5,
 .h6 {
   --space: 0;
