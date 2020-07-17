@@ -18,7 +18,7 @@
   transition: color $transition--base;
   color: $carbon--gray-100;
   text-decoration: none;
-  margin-bottom: $spacing-03;
+  margin-top: $spacing-03;
   margin-left: $spacing-06;
 
   &:hover {
@@ -41,21 +41,7 @@
 
 .list--small .link {
   @include carbon--type-style('body-long-02');
-  margin-bottom: 0;
-}
-
-.list-item {
-  @include carbon--type-style('expressive-heading-03', true);
-  width: auto;
-  list-style: none;
-  padding-left: 0;
-  display: flex;
-  align-items: center;
-  margin-left: 0;
-
-  &:before {
-    display: none;
-  }
+  margin-top: 0;
 }
 
 // Multiple Columns
@@ -80,4 +66,8 @@
       color: $carbon--blue-40;
     }
   }
+}
+
+.item:first-of-type .link {
+  margin-top: 0;
 }
